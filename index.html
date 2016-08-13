@@ -49,12 +49,6 @@
 	#header{
 		top:0px;
 	}
-	#left-footer{
-		float: left;
-	}
-	#right-footer{
-		float: right;
-	}
 	#footer{
 		bottom:0px;
 	}
@@ -77,13 +71,13 @@
 		background-color: #333;
 	}
 
-	li {
+	.header li {
 		float: left;
 	}
 
 	li a {
 		display: block;
-		color: white;
+		color: black;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
@@ -97,6 +91,11 @@
 	/* Change regular link color to #111 (black) by default */
 	a {
 		color: #00AAAA;
+	}
+	
+	.contact img {
+		height: 40px;
+		width: 40px;
 	}
 	</style>
 
@@ -116,7 +115,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['helloworld', 'aboutme', 'coursework', 'contactme'],
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#DF3D82'],
+				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#9DB8C6'],
 				menu: '#menu',
 				loopTop: true,
 				loopBottom: true,
@@ -124,11 +123,14 @@
 			});
 		});
 	</script>
+	<script type="text/javascript">
+		run = true;
+	</script>
 
 </head>
 <body>
 
-<div id="header">
+<div id="header" class="header">
 	<ul id="menu">
 		<li data-menuanchor="helloworld" class="active"><a href="#helloworld">Intro</a></li>
 		<li data-menuanchor="aboutme"><a href="#aboutme">About</a></li>
@@ -137,29 +139,16 @@
 	</ul>
 </div>
 
-<div id="footer">
-	<div id="left-footer">
-		<ul>
-			<li><a href="resources/resume.pdf" target="_blank">Resume</a></li>
-			<li><a href="http://www.linkedin.com/in/brian-marks" target="_blank">LinkedIn</a></li>
-			<li><a href="https://www.github.com/bm1549" target="_blank">GitHub</a></li>
-			<li><a href="http://www.stackoverflow.com/users/5021530/brian" target="_blank">StackOverflow</a></li>
-			<li><a href="https://nyu-csm.symplicity.com/profiles/brian.marks" target="_blank">NYU</a></li>
-		</ul>
-	</div>
-	<div id="right-footer">
-		Brian.Marks[at]nyu.edu
-	</div>
-</div>
-
 <div id="fullpage">
 	<div class="section " id="section0">
 		<div class="intro">
 			<h1>Hello World</h1>
 			<p>
-				My name is Brian Marks and this is my personal page.<br/>
+				My name is Brian Marks and this is my home on the web.<br/>
 				<br/>
-				I have some cool information on here such as an <a href="#aboutme">about me</a>, some of my <a href="#coursework">coursework</a> and my <a href="#contactme">contact information</a> if you'd like to reach out.
+				I have some cool information on here such as an <a href="#aboutme">about me</a>, 
+				some of my <a href="#coursework">coursework</a> and my 
+				<a href="#contactme">contact information</a> if you'd like to reach out.
 			</p>
 			<br/>
 			<img src="resources/me.jpg" />
@@ -242,11 +231,35 @@
 	</div>
 	<div class="section" id="section3">
 		<div class="intro">
-			<h1>Contact Me</h1>
+			<h1>Email Me</h1>
 			<p>
-				If you'd like to contact me, please see the top of my <a href="resources/resume.pdf">resume</a>.
+			Send an email to Brian.Marks[at]nyu.edu or use the form below<br/><br/>
+			<!-- Do not change the code! -->
+			<div id="foxyform_embed_link_805292" </div>
+			<script type="text/javascript">
+			(function(d, t){
+				if( run ){
+				   var g = d.createElement(t),
+					   s = d.getElementsByTagName(t)[0];
+				   g.src = "http://www.foxyform.com/js.php?id=805292&sec_hash=ac6ff9df53e&width=350px";
+				   s.parentNode.insertBefore(g, s);
+				}
+				run = false;
+			}(document, "script"));
+			</script>
+			<!-- Do not change the code! -->
 			</p>
+			
+			</div>
 		</div>
+		<div class="contact">
+			<a href="resources/resume.pdf"><img src="resources/resume.jpg"/></a>
+			<a href="http://www.linkedin.com/in/brian-marks"><img src="resources/linkedin.png"/></a>
+			<a href="https://www.github.com/bm1549"><img src="resources/github.png"/></a>
+			<a href="http://www.stackoverflow.com/users/5021530/brian"><img src="resources/stackoverflow.jpg"/></a>
+			<a href="https://nyu-csm.symplicity.com/profiles/brian.marks"><img src="resources/nyu.jpg"/></a>
+		</div>
+		
 	</div>
 </div>
 
