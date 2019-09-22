@@ -1,0 +1,13 @@
+---
+layout: page
+permalink: /cocktails/
+title: Cocktails
+---
+
+<div id="archives">
+    {% for post in site.categories["cocktails"] %}
+    <article class="archive-item">
+      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title | remove: "Cocktail:"}}</a></h4>
+    </article>
+    {% endfor %}
+</div>
