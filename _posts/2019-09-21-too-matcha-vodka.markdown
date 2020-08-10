@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cocktail: Too Matcha Vodka"
+title:  "Too Matcha Vodka 🍹"
 date:   2019-09-21 20:40:15 -0400
 categories: cocktails
 ---

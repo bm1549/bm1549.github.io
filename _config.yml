@@ -1,7 +1,7 @@
 title: Brian Marks
 email: brian@brianmarks.me
 description: > # this means to ignore newlines until "show_excerpts:"
-  Hi I'm Brian and this is my lazily done Wordpress site!
+  Hi, I'm Brian and this is my personal site and blog. Feel free to browse around!
 show_excerpts: false # set to true to show excerpts on the homepage
 
 google_analytics: UA-148448760-1
@@ -50,3 +50,4 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-redirect-from
